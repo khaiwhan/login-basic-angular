@@ -1,0 +1,10 @@
+<div class="login">
+    <div class="login-form">
+        <h1>Login ✨</h1>
+        <div class="input-group" [formGroup]="form">
+            <textbox [type]="'email'" [label]="'Email'" formControlName="email"></textbox>
+            <textbox [type]="'password'" [label]="'Password'" formControlName="password"></textbox>
+        </div>
+        <button class="button" (click)="login()">Sign In</button>
+    </div>
+</div>
