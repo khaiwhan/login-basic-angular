@@ -1,5 +1,5 @@
 
-{{label}}
+<b>{{label}}</b>
 <input [class.invalid]="hasErrors" [type]="type" [placeholder]="placeholder" [value]="value" (input)="onTextChange($event)">
 @if(hasErrors){
     @if(control?.hasError('required') || control?.hasError('empty')){
